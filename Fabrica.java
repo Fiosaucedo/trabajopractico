@@ -39,7 +39,7 @@ public class Fabrica {
 	static Album crearAlbumWeb() {
         AlbumWeb album= new AlbumWeb();
         album.codigo= (10000 - 1) + (int) (Math.random()*(99999 + 1));
-        album.CodigoFigusExtra= (10000 - 1) + (int) (Math.random()*(99999 + 1));
+        album.CodigoFigusExtra = (10000 - 1) + (int) (Math.random()*(99999 + 1));
         return album;
 	}
 
@@ -61,9 +61,9 @@ public class Fabrica {
 		List<Figurita> sobre= new List<Figurita>();
 		 for (int i=0; i<cantFigus;i++) {
 			Figurita figu= new Figurita();
-			figu.Numero= (int)(Math.random()*(12+1));
-			figu.NombrePais= paisesParticipantes[(int) (Math.random()*(paisesParticipantes.length+1))];
-			figu.ValorBase=(calcularValorBase(figu.NombrePais,figu.Numero));
+			figu.numero= (int)(Math.random()*(12+1));
+			figu.nombrePais= paisesParticipantes[(int) (Math.random()*(paisesParticipantes.length+1))];
+			figu.valorBase=(calcularValorBase(figu.nombrePais,figu.numero));
 		}
 		return sobre;
 	}		
@@ -72,7 +72,7 @@ public class Fabrica {
 				List<FiguritaTop10> sobretop10= new List<FiguritaTop10>();
 				for (int i=0; i<cantFigus;i++) {
 					Figurita figu= new Figurita();
-					figu.NombrePais= }
+					figu.nombrePais ; }
 				}
 
 
@@ -114,98 +114,98 @@ public class Fabrica {
 
 	private Map<String, String[]> generarPaisesPorMundial() {
 		Map<String, String[]> ret = new HashMap<>();
-		ret.put("EspaÃ±a '82", new String[] { "Italia", "Brasil" });
-		ret.put("MÃ©xico '86", new String[] { "Argentina", "Alemania" });
+		ret.put("España '82", new String[] { "Italia", "Brasil" });
+		ret.put("México '86", new String[] { "Argentina", "Alemania" });
 		ret.put("Italia '90", new String[] { "Italia", "Alemania" });
 		ret.put("Estados Unidos '94", new String[] { "Brasil", "Italia" });
 		ret.put("Francia '98", new String[] { "Brasil", "Croacia" });
 		ret.put("Corea del Sur y JapÃ³n '02", new String[] { "Alemania", "Brasil" });
 		ret.put("Alemania '06", new String[] { "Francia", "Italia" });
-		ret.put("SudÃ¡frica '10", new String[] { "Uruguay", "PaÃ­ses Bajos" });
+		ret.put("Sudáfrica '10", new String[] { "Uruguay", "Países Bajos" });
 		ret.put("Brasil '14", new String[] { "Argentina", "Alemania" });
-		ret.put("Rusia '18", new String[] { "Croacia", "BÃ©lgica" });
+		ret.put("Rusia '18", new String[] { "Croacia", "Bélgica" });
 		return ret;
 	}
 	
 	private Map<String, Integer> generarRanking() {
 		Map<String, Integer> ret = new HashMap<>();
 		ret.put("Brasil",1);
-		ret.put("BÃ©lgica",2);
+		ret.put("Bégica",2);
 		ret.put("Argentina",3);
 		ret.put("Francia",4);
 		ret.put("Inglaterra",5);
 		ret.put("Italia",6);
-		ret.put("EspaÃ±a",7);
-		ret.put("PaÃ­ses Bajos",8);
+		ret.put("España",7);
+		ret.put("Países Bajos",8);
 		ret.put("Portugal",9);
 		ret.put("Dinamarca",10);
 		ret.put("Alemania",11);
 		ret.put("Croacia",12);
-		ret.put("MÃ©xico",13);
+		ret.put("México",13);
 		ret.put("Uruguay",14);
 		ret.put("Suiza",15);
 		ret.put("Estados Unidos",16);
 		ret.put("Colombia",17);
 		ret.put("Senegal",18);
 		ret.put("Gales",19);
-		ret.put("IrÃ¡n",20);
+		ret.put("Irán",20);
 		ret.put("Serbia",21);
 		ret.put("Marruecos",22);
-		ret.put("PerÃº",23);
-		ret.put("JapÃ³n",24);
+		ret.put("Perú",23);
+		ret.put("Japón",24);
 		ret.put("Suecia",25);
 		ret.put("Polonia",26);
 		ret.put("Ucrania",27);
-		ret.put("RepÃºblica de Corea",28);
+		ret.put("República de Corea",28);
 		ret.put("Chile",29);
 		ret.put("TÃºnez",30);
 		ret.put("Costa Rica",31);
 		ret.put("Nigeria",32);
 		ret.put("Rusia",33);
 		ret.put("Austria",34);
-		ret.put("RepÃºblica Checa",35);
-		ret.put("HungrÃ­a",36);
+		ret.put("República Checa",35);
+		ret.put("Hungría",36);
 		ret.put("Argelia",37);
 		ret.put("Australia",38);
 		ret.put("Egipto",39);
 		ret.put("Escocia",40);
-		ret.put("CanadÃ¡",41);
+		ret.put("Canadá",41);
 		ret.put("Noruega",42);
-		ret.put("CamerÃºn",43);
+		ret.put("Camerún",43);
 		ret.put("Ecuador",44);
-		ret.put("TurquÃ­a",45);
+		ret.put("Turquía",45);
 		ret.put("Mali",46);
 		ret.put("Paraguay",47);
 		ret.put("Costa de Marfil",48);
-		ret.put("RepÃºblica de Irlanda",49);
+		ret.put("República de Irlanda",49);
 		ret.put("Qatar",50);
-		ret.put("Arabia SaudÃ­",51);
+		ret.put("Arabia Saudí",51);
 		ret.put("Grecia",52);
-		ret.put("RumanÃ­a",53);
+		ret.put("Rumanía",53);
 		ret.put("Burkina Faso",54);
 		ret.put("Eslovaquia",55);
 		ret.put("Finlandia",56);
 		ret.put("Venezuela",57);
 		ret.put("Bosnia y Herzegovina",58);
 		ret.put("Irlanda del Norte",59);
-		ret.put("PanamÃ¡",60);
+		ret.put("Panamá",60);
 		ret.put("Ghana",61);
 		ret.put("Islandia",62);
 		ret.put("Eslovenia",63);
 		ret.put("Jamaica",64);
 		ret.put("Macedonia del Norte",65);
 		ret.put("Albania",66);
-		ret.put("SudÃ¡frica",67);
+		ret.put("Sudáfrica",67);
 		ret.put("Irak",68);
 		ret.put("Montenegro",69);
-		ret.put("Emiratos Ã�rabes Unidos",70);
+		ret.put("Emiratos Árabes Unidos",70);
 		ret.put("Cabo Verde",71);
 		ret.put("Bulgaria",72);
 		ret.put("RD del Congo",73);
 		ret.put("El Salvador",74);
 		ret.put("OmÃ¡n",75);
 		ret.put("Israel",76);
-		ret.put("UzbekistÃ¡n",77);
+		ret.put("Uzbekistán",77);
 		ret.put("Georgia",78);
 		ret.put("RP China",79);
 		ret.put("Honduras",80);
